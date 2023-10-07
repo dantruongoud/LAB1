@@ -1,0 +1,242 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;background-color: #fff;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 8px 0px;
+}
+
+#contain {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 699px;
+    background-color: #fff;
+}
+
+#aside {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contain .item {
+    width: 50%;
+}
+
+/* css banner */
+.banner {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* css phan item */
+.content {
+    display: flex;
+    gap: 5px;
+    width: calc(100% - 5px);
+}
+.item-head {
+    width: 340px;
+}
+.item-head > h3 {
+    font-size: 18px;
+    font-family: 'Inter';
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    max-height: 40px;
+    margin: 0;
+    padding: 10px 0px;
+
+}
+
+.item-head > h3:hover {
+    color: #78b43d;
+}
+
+.item-content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-content > img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.item-content > div {
+    display: block;
+    overflow: hidden;
+}
+.item-content > div > p {
+    margin: 0;
+}
+
+.icon > a {
+    color: #78b43d;
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon > a:not(.icon-left) > span:last-child:hover {
+    text-decoration: underline;
+}
+
+.icon-left > span:first-child {
+    font-size: 14px !important;
+}
+
+.icon-left > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* set mau backgound cho phan noi dung */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+ul.bg-blue {
+    background-color: #eaf8d2;
+}
+
+ul.bg-blue .bold {
+    background-color: #d5ecab;
+}
+
+.item > ul:last-child a {
+    font-weight: 600;
+}
+
+ul li .icon-left {
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    padding: 5px;
+}
+
+/* Xu ly hover phan trong the ul */
+ul li .icon-left > span:last-child {
+    color: #333;
+}
+
+ul li .icon-left > span:last-child:hover {
+    color: #78b43d;
+}
+
+/* css phan aside */
+#aside > .sumary {
+    width: 100%;
+    height: 300px;
+}
+
+.sumary > .sumary-head {
+    font-size: 22px;
+    font-weight: 800;
+    color: #78b43d;
+    border-bottom: 3px solid;
+    width: 100%;
+}
+
+.sumary > .sumary-content a, 
+.banner-boder > .banner-content > a {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+    font-size: 17px !important;
+    color: #333;
+}
+
+.sumary > .sumary-content a:hover,
+.banner-boder > .banner-content a:hover {
+    color: #78b43d;
+}
+
+.sumary > .sumary-content a img {
+    width: 100px;
+    height: 75px;
+}
+
+.banner-boder {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 300px;
+}
+
+.banner-boder > .banner-head {
+    background-color: #d2577e;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.banner-boder > .banner-head > span:first-child{
+    font-size: 32px;
+}
+
+.banner-boder > .banner-content {
+    padding: 0px 5px;
+}
+
+.banner-boder > .banner-content > a img {
+    width: 100px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.banner-boder > .banner-content > a {
+    font-weight: 600;
+}
+
+.banner-boder > .banner-content > ul {
+    width: 100%;
+    height: calc(100% - 95px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.is-flex {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.is-flex > span:first-child {
+    font-size: 16px;
+    color: #d2577e;
+}
